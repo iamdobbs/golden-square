@@ -1,5 +1,3 @@
-# File: lib/string_builder.rb
-
 class StringBuilder
   def initialize
     @str = ""
