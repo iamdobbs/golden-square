@@ -4,15 +4,15 @@ RSpec.describe StringBuilder do
 
   before(:each) do
     @test = StringBuilder.new
-    @test.add('hello')
+    @str = @test.add('hello')
   end
 
   it "adds 'chars' to an empty string" do
-    expect(@test).to eq 'hello'
+    expect(@str).to eq 'hello'
   end
-  
+
   it "returns length of string" do
-    result = @test.size
+    result = @str.size
     expect(result).to eq 5
   end
 
