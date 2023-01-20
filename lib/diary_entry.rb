@@ -28,11 +28,13 @@ class DiaryEntry
     end_index = start_index + (current_words - 1)
     if end_index < @words.count - 1
       return @words[start_index..end_index].join(' ')
+      @current_reading_index += current_words
     else
       end_index = @words.count - 1
       return @words[start_index..end_index].join(' ')
+      @current_reading_index = 0
     end   
-    @current_reading_index += current_words
+    
   end  
 end
 
